@@ -473,3 +473,194 @@ html,body{
     height: 12px;
     background: url(images/action_icons12.png) no-repeat -20px 0;
 }
+/*右下角*/
+.elevator-item{
+    position: fixed;
+    right: 15px;
+    bottom: 10px;
+    z-index: 1000;
+    opacity: 1;
+}
+.elevator-item .elevator{
+    width: 40px;
+    height: 36px;
+    background: url(images/iconsprite_btbar.png)8px 6px no-repeat;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.elevator-item .elevator:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+
+}
+.elevator-item .plus{
+    width: 40px;
+    height: 36px;
+    background: url(images/iconsprite_btbar.png)8px -34px no-repeat;
+    background-color :rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+    display: inline-block;
+ 
+}
+.elevator-item .plus:hover{
+    background-color:rgba(0, 0, 0, 0.8);
+}
+/*登录界面*/
+.mask{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+.mask .mask-center{
+    width: 520px;
+    height: 420px;
+    background: #FFF;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 5px;
+    margin-top: -160px;
+    margin-left: -260px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.mask .mask-center .close-btn{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 10px;
+    top: 10px;
+    background: url("images/msg_close.png") 0 0;
+}
+.mask .mask-center .image-logo{
+    width: 106px;
+    margin: 0 auto;
+    display: block;
+
+}
+.mask .mask-center .center_box{
+    width: 286px;
+    margin: 20px auto 0;
+}
+.mask .mask-center .center_box .txtBox{
+    position: relative;
+    text-align: center;
+    margin:0 auto;
+    color:#999
+}
+.txtBox span:nth-child(1){
+    content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 8px;
+    left: 0;
+}
+.txtBox span:nth-child(3){
+    content: "";
+    border-top: 1px solid #ededed;
+    display: block;
+    position: absolute;
+    width: 50px;
+    top: 8px;
+    right: 0;
+}
+.center_box .buttons{
+    margin: 15px 0 20px;
+    text-align: center;
+    /*font-size: 0;*/
+    letter-spacing: -999px;
+
+}
+.center_box .buttons a {
+    background-image: url('images/login_icons_tiny.svg');
+    width: 48px;
+    height: 48px;
+    margin-right: 10px;
+    letter-spacing: 0;
+
+}
+
+.center_box .buttons a:nth-child(1){
+    display: inline-block;
+}
+.center_box .buttons a:nth-child(2){
+    display: inline-block;
+    background-position: -80px 0;
+}
+.center_box .buttons a:nth-child(3){
+    display: inline-block;
+    background-position: -160px 0;
+}
+.center_box .buttons a:nth-child(4){
+    display: inline-block;
+    background-position: -240px 0;
+}
+.center_box .buttons a:nth-child(5){
+    display: inline-block;
+    background-position: -320px 0;
+    margin-right: 0;
+
+}
+.center_box .mail-login {
+    margin-top: 15px;
+}
+
+.center_box .mail-login .clear-input {
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.clear-input {
+    display: inline-block;
+    padding: 0 10px;
+    height: 36px;
+    font-size: 16px;
+    line-height: 1;
+    color: #777;
+    background: #FCFCFC;
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    width: 250px;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,.05);
+    -webkit-transition: color .2s linear,border-color .3s linear;
+}
+
+.btn18 {
+    font-size: 18px;
+    padding: 0 15px;
+    border-radius: 3px;
+    height: 36px;
+    line-height: 36px;
+}
+
+.rbtn {
+    display: block;
+    background: #E53E49;
+    background: linear-gradient( #E53E49, #D43636);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.08), 0 1px 0 rgba(255,255,255,.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,.1);
+    color: #fff;
+    border: 1px solid #C90000;
+    text-align: center;
+    text-decoration: none;
+}
+
+.switch-back {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.red-link {
+    color: #9A0000;
+}
+.center_box a {
+    cursor: pointer;
+}

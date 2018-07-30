@@ -197,8 +197,56 @@
         </div>
     </div>
     <!--右边浮动-->
-    <div id="elevator_item"></div>
+    <div id="elevator_item" class="elevator-item">
+        <a href="" title="回到顶部" class="elevator"></a><br>
+        <a href="" class="plus"></a>
+    </div>
     <!--登录面板-->
+    <section id="mask" class="mask">
+        <div class="mask-center" id="mask_center">
+            <a href="" class="close-btn" id="close_btn"></a>
+            <img src="images/logo_2x.png" alt="" class="image-logo">
+            <!--内容-->
+            <div class="center_box">
+                    <!--第三方帐号登录-->
+                    <div class="txtBox">
+                        <span></span>
+                        <span class="txt">使用第三方帐号登录</span>
+                        <span></span>
+                    </div>
+                    <!--按钮图片-->
+                    <div class="buttons">
+                        <a href="#" title="微博帐号登录" rel="nofollow" class="weibo"></a>
+                        <a href="#" title="QQ帐号登录" rel="nofollow" class="qzone"></a>
+                        <a href="#" title="微信帐号登录" rel="nofollow" class="wechat"></a>
+                        <a href="#" title="豆瓣帐号登录" rel="nofollow" class="douban"></a>
+                        <a href="#" title="人人帐号登录" rel="nofollow" class="renren"></a>
+                    </div>
+                    <div class="txtBox">
+                        <span></span>
+                        <span class="txt">使用手机号/邮箱登录</span>
+                        <span></span>
+                    </div>
+                    <!--表单-->
+                    <form action="" method="post" class="mail-login">
+                        <input type="hidden" name="_ref" value="frame">
+                        <input type="text" name="email" placeholder="输入手机号或者邮箱" class="clear-input">
+                        <input name="password" type="password" placeholder="密码" class="clear-input">
+                        <a href="#" onclick="return false;" class="btn btn18 rbtn">
+                            <span class="text"> 登录
+                            </span>
+                        </a>
+                    </form>
+                    <div class="switch-back">
+                        <a class="red-link">忘记密码»</a>
+                        还没有花瓣帐号？
+                        <a class="red-link">点击注册»</a>
+                    </div>
+                </div>
+        </div>
+    </section>
+    
+
     <script src="MyFunc.js"></script>
     <script src="Underscore-min.js"></script>
     <script src="waterFull.js"></script>
