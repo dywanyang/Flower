@@ -363,6 +363,7 @@ html,body{
 /*瀑布流*/
 .tab .tab-content .dom{
     display: none;
+    /* height: 2000px; */
 }
 .tab .tab-content .dom .dom-top{
     width: 1244px;
@@ -398,4 +399,77 @@ html,body{
 }
 .dom .dom-top ul li:nth-child(5) a{
     background: url(images/top05.jpg) no-repeat;
+}
+
+.dom-pull{
+    width: 1240px;
+    padding: 20px 0;
+    margin: 0 auto;
+    position: relative;
+}
+.dom-pull .box{
+    position: relative;
+    width: 234px;
+    float: left;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+.dom-pull .box .pic{
+    position: relative;
+    cursor: pointer;
+}
+.dom-pull .box .pic img{
+    width: 234px;
+}
+.dom-pull .box .pic .cover{
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    display: none;
+}
+.dom-pull .box  p{
+    line-height:18px;
+    padding: 0 10px;
+    margin: 10px 0;
+    word-wrap: break-word;
+}
+.btn-box{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    background: #c90000;
+    z-index: 3;
+    display: none;
+}
+.btn-box .collect{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    line-height: 30px;
+    background: #c90000;
+    padding: 0 12px;
+    color: #fff;
+}
+.btn-box .like{
+    position: absolute;
+    border-radius: 4px;
+    top: 0;
+    right: 0;
+    background: #FFF;
+    height: 30px;width: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-box .like .heart{
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: url(images/action_icons12.png) no-repeat -20px 0;
 }
