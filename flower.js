@@ -7,8 +7,15 @@
     setTimeout(() => {
         waterFull("dom_pull","box");  
     }, 200);
+    //4.屏幕的滚动加载
+    window.onscroll = function(){
+        if(checkWillLoadImage()){
+            autoCreateImg();
+            waterFull("dom_pull","box"); 
+        }
+    }    
     
-})();
+})(window);
 
 function autoCreateImg(){
     //1.数据
