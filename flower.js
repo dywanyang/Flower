@@ -9,13 +9,55 @@
     }, 200);
     //4.屏幕的滚动加载
     window.onscroll = function(){
+        //瀑布流加载图片
         if(checkWillLoadImage()){
             autoCreateImg();
             waterFull("dom_pull","box"); 
         }
-    }    
+        //吸顶效果
+        var scrollTop = scroll().top;
+        if(scrollTop>=150){
+            $("top_nav").style.display = "block";
+            $("elevator").style.display = "block";
+            
+        }else{
+            $("top_nav").style.display = "none";
+            $("elevator").style.display = "none";
+        }
+        //缓慢滚回顶部
+        $("elevator").onclick = function(){
+            buffer(document.documentElement,{scrollTop:0},null);
+        };
+    } 
+    //5.监听点击按钮
+    $("login").onclick = function(){
+        $("mask").style.display = "block";
+    }  
+    $("close_btn").onclick = function(){
+        $("mask").style.display = "none";
+    } 
+    //6.广告轮播
+    bannerAutoPlay();
+
     
 })(window);
+
+function bannerAutoPlay(){
+    var lis = $("slider_banner").getElementsByTagName("li");
+    var index  = 0;
+    setInterval(function(){
+        //改变透明度
+        for(var i =0 ;i<lis.length;i++){
+            var singleLi = lis[i];
+            buffer(singleLi,{opacity:0},null);
+        }
+        buffer(lis[index],{opacity:1},null);
+        index++;
+        if(index===lis.length){
+            index = 0;
+        }
+    },2000);
+}
 
 function autoCreateImg(){
     //1.数据
